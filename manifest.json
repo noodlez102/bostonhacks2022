@@ -1,0 +1,15 @@
+{
+    "name":"Todos",
+    "version":"1.0.0",
+    "description":"Boston hackathon extension",
+    "manifest_version": 3,
+    "action":{
+        "default_popup":"index.html"
+    },
+    "permissions": ["tabs","cookies", "browsingData", "desktopCapture","webNavigation", "webRequest"],
+    "host_permissions":["http://www.bu.edu/link/bin/uiscgi_studentlink.pl/*"],
+    "content_scripts": [{
+        "matches": ["http://www.bu.edu/link/bin/uiscgi_studentlink.pl/*"],
+        "js":["contentscript.js"]
+    }]
+}

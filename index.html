@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang=""en>
+    <head>
+        <lin rel="stylesheet" href="index.css">
+            <title>Document</title>
+        </lin>
+    </head>
+    <script>
+        url = window.location.href;
+        const urlParams = new URLSearchParams(url);
+        semester = urlParams.get('ViewSem');
+        alert(semester);
+        keysemes = urlParams.get('KeySem');
+        alert(keysemes);
+        const finalurl = "http://www.bu.edu/link/bin/uiscgi_studentlink.pl/1668327230?ModuleName=reg/graph/_start.pl&ViewSem=" + semester + "&KeySem=" + keysemes;
+    </script>
+    <body>
+        <h1> Hello!</h1>
+        <iframe src= "finalurl" style="width:500px; height:500px">
+    </body>
+</html>
+
